@@ -6,10 +6,12 @@
 
 package cputgroup3a.immutability.service;
 
+import cputgroup3a.immutability.model.CD;
+
 /**
  *
  * @author kurvin
  */
-public interface Music {
+public interface Music extends CrudService<CD, String>{
     
 }

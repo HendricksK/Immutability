@@ -6,12 +6,21 @@
 
 package cputgroup3a.immutability.service;
 
-import cputgroup3a.immutability.model.PurchaseDvd;
+import java.util.List;
 
 /**
  *
  * @author kurvin
  */
-public interface MediaStore extends CrudService <PurchaseDvd, String>{
+public interface CrudService <S, ID>{
     
+    public S find(ID id);
+
+    public S persist(S entity);
+
+    public S merge(S entity);
+
+    public S remove(S entity);
+
+    public List<S> findAll();
 }

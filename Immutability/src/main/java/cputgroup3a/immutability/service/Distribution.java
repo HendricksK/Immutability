@@ -6,10 +6,13 @@
 
 package cputgroup3a.immutability.service;
 
+import cputgroup3a.immutability.model.ProductBuyer;
+
+
 /**
  *
  * @author kurvin
  */
-public interface Distribution {
+public interface Distribution extends CrudService<ProductBuyer, String>{
     
 }
